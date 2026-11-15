@@ -1,0 +1,847 @@
+
+/* ==========================================
+   RIZWAN HONDA DISPLAY
+   ABOUT US PAGE STYLESHEET
+========================================== */
+
+/* [01] GENERAL SETTINGS */
+
+.about-hero,
+.about-story,
+.mission-vision,
+.core-values,
+.atlas-section,
+.customer-commitment,
+.about-cta {
+    width: 100%;
+}
+
+.about-hero {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+
+/* [02] ABOUT HERO BANNER */
+
+.about-hero {
+    min-height: 360px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    padding: 65px 7%;
+
+    color: white;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.92),
+            rgba(0,0,0,.55)
+        ),
+        url("asset/img1.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(170,0,0,.12);
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero-content > span {
+    display: inline-block;
+
+    background: #d71920;
+    padding: 7px 16px;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.about-hero h1 {
+    font-size: clamp(35px, 6vw, 60px);
+    font-weight: 900;
+    margin: 18px 0 8px;
+    line-height: 1.2;
+}
+
+.about-hero h1 span {
+    color: #ff343b;
+}
+
+.about-hero-content > p {
+    color: #ddd;
+    font-size: 16px;
+}
+
+.breadcrumb {
+    margin-top: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    font-size: 13px;
+}
+
+.breadcrumb a {
+    color: white;
+}
+
+.breadcrumb strong {
+    color: #ff343b;
+}
+
+
+/* [03] COMPANY STORY */
+
+.about-story {
+    padding: 90px 7%;
+    background: white;
+}
+
+.story-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.story-image {
+    position: relative;
+}
+
+.story-image img {
+    width: 100%;
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    box-shadow: 12px 12px 0 #d71920;
+}
+
+.image-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    background: #111;
+    color: white;
+
+    padding: 14px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.image-label strong {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.image-label small {
+    color: #ff343b;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.about-label {
+    display: inline-block;
+
+    color: #d71920;
+
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.story-content h2 {
+    font-size: clamp(28px, 4vw, 39px);
+    line-height: 1.3;
+
+    margin: 15px 0 22px;
+}
+
+.story-content p {
+    font-size: 15px;
+    color: #666;
+
+    margin-bottom: 15px;
+    line-height: 1.9;
+}
+
+.story-content strong {
+    color: #111;
+}
+
+.about-btn {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 13px 25px;
+
+    background: #d71920;
+    color: white;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.about-btn:hover {
+    background: #111;
+    transform: translateY(-3px);
+}
+
+
+/* [04] COMMON SECTION HEADING */
+
+.about-section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.about-section-heading span {
+    color: #d71920;
+
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.about-section-heading h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    margin: 10px 0;
+}
+
+.about-section-heading p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* MANAGEMENT SECTION */
+
+.management-section {
+    padding: 85px 6%;
+    background: #f8f8f8;
+}
+
+.management-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.management-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.management-heading span {
+    color: #d71920;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.management-heading h2 {
+    font-size: 36px;
+    color: #171717;
+    margin: 12px 0;
+}
+
+.management-heading p {
+    color: #777;
+    font-size: 15px;
+}
+
+.management-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.manager-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: all 0.35s ease;
+}
+
+.manager-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.manager-image {
+    height: 320px;
+    overflow: hidden;
+    background: #eee;
+}
+
+.manager-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.manager-card:hover .manager-image img {
+    transform: scale(1.05);
+}
+
+.manager-info {
+    padding: 23px 15px;
+    border-bottom: 4px solid #d71920;
+}
+
+.manager-info h3 {
+    color: #171717;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+.manager-info p {
+    color: #d71920;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .management-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .management-section {
+        padding: 55px 5%;
+    }
+
+    .management-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .management-heading h2 {
+        font-size: 28px;
+    }
+
+    .manager-image {
+        height: 350px;
+    }
+}
+
+
+
+/* [05] MISSION AND VISION */
+
+.mission-vision {
+    padding: 85px 7%;
+    background: #f5f5f5;
+}
+
+.mission-grid {
+    max-width: 1050px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.mission-card {
+    padding: 40px 30px;
+
+    background: white;
+
+    border-radius: 8px;
+    border-top: 4px solid #d71920;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,.05);
+
+    transition: .3s;
+}
+
+.mission-card:hover {
+    transform: translateY(-6px);
+}
+
+.vision-card {
+    background: #171717;
+    color: white;
+}
+
+.mission-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.mission-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.mission-card p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.9;
+}
+
+.vision-card p {
+    color: #ccc;
+}
+
+
+/* [06] CORE VALUES */
+
+.core-values {
+    padding: 90px 7%;
+    background: white;
+}
+
+.values-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.value-card {
+    position: relative;
+
+    background: #f7f7f7;
+
+    padding: 30px 22px;
+
+    border-radius: 7px;
+    border-bottom: 3px solid transparent;
+
+    transition: .3s;
+    overflow: hidden;
+}
+
+.value-card:hover {
+    background: #171717;
+    color: white;
+    border-color: #d71920;
+
+    transform: translateY(-7px);
+}
+
+.value-number {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    color: #ddd;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.value-icon {
+    font-size: 38px;
+    margin: 20px 0;
+}
+
+.value-card h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.8;
+}
+
+.value-card:hover p {
+    color: #ccc;
+}
+
+.value-card:hover .value-number {
+    color: #444;
+}
+
+
+/* [07] ATLAS HONDA SECTION */
+
+.atlas-section {
+    padding: 80px 9%;
+
+    background:
+        linear-gradient(
+            100deg,
+            rgba(0,0,0,.97),
+            rgba(0,0,0,.82)
+        );
+
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.atlas-content {
+    max-width: 650px;
+}
+
+.atlas-content > span {
+    color: #ff343b;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.atlas-content h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.3;
+    margin: 15px 0;
+}
+
+.atlas-content p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.atlas-btn {
+    display: inline-block;
+
+    background: #d71920;
+    color: white;
+
+    padding: 13px 22px;
+
+    margin-top: 25px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.atlas-btn:hover {
+    background: white;
+    color: #111;
+}
+
+.atlas-symbol {
+    min-width: 240px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #d71920;
+    border-radius: 8px;
+
+    padding: 40px 25px;
+}
+
+.atlas-symbol span {
+    color: #d71920;
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+.atlas-symbol small {
+    color: #aaa;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+
+/* [08] CUSTOMER COMMITMENT */
+
+.customer-commitment {
+    padding: 85px 7%;
+    background: #f5f5f5;
+}
+
+.commitment-content {
+    max-width: 950px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.commitment-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+
+    background: white;
+    border-radius: 5px;
+
+    transition: .3s;
+}
+
+.commitment-item:hover {
+    border-left: 4px solid #d71920;
+    transform: translateX(5px);
+}
+
+.commitment-item span {
+    color: #d71920;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.commitment-item p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* [09] FINAL CALL TO ACTION */
+
+.about-cta {
+    padding: 75px 7%;
+
+    text-align: center;
+
+    color: white;
+    background: #d71920;
+}
+
+.about-cta > span {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.about-cta h2 {
+    font-size: clamp(27px, 4vw, 42px);
+    margin: 12px 0;
+}
+
+.about-cta p {
+    font-size: 14px;
+    color: #ffe0e0;
+    margin-bottom: 25px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cta-whatsapp,
+.cta-contact {
+    padding: 13px 25px;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+    font-weight: 900;
+
+    transition: .3s;
+}
+
+.cta-whatsapp {
+    background: white;
+    color: #d71920;
+}
+
+.cta-contact {
+    border: 1px solid white;
+    color: white;
+}
+
+.cta-whatsapp:hover {
+    background: #111;
+    color: white;
+}
+
+.cta-contact:hover {
+    background: white;
+    color: #d71920;
+}
+
+
+/* [10] MOBILE RESPONSIVENESS */
+
+@media (max-width: 900px) {
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-container {
+        gap: 35px;
+    }
+
+    .atlas-symbol {
+        min-width: 190px;
+    }
+
+}
+
+
+/* [11] TABLET AND MOBILE */
+
+@media (max-width: 768px) {
+
+    .about-hero {
+        min-height: 310px;
+        padding: 55px 5%;
+    }
+
+    .about-story {
+        padding: 65px 6%;
+    }
+
+    .story-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .story-image img {
+        height: 300px;
+    }
+
+    .story-content h2 {
+        font-size: 30px;
+    }
+
+    .mission-vision,
+    .core-values,
+    .customer-commitment {
+        padding: 65px 6%;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .atlas-section {
+        padding: 60px 6%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .atlas-symbol {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .commitment-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cta {
+        padding: 60px 6%;
+    }
+
+}
+
+
+/* [12] SMALL MOBILE DEVICES */
+
+@media (max-width: 420px) {
+
+    .about-hero h1 {
+        font-size: 34px;
+    }
+
+    .about-hero-content > p {
+        font-size: 13px;
+    }
+
+    .story-image img {
+        height: 240px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card {
+        padding: 25px;
+    }
+
+    .mission-card {
+        padding: 28px 22px;
+    }
+
+    .atlas-symbol span {
+        font-size: 38px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons a {
+        width: 100%;
+    }
+
+}
+
+
+/* [13] ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-btn,
+    .mission-card,
+    .value-card,
+    .commitment-item,
+    .atlas-btn,
+    .cta-whatsapp,
+    .cta-contact {
+        transition: none;
+    }
+
+}
